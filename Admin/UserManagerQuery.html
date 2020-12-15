@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>所有用户管理</title>
+		<link rel="stylesheet" type="text/css" href="../css/css.css"/>
+		<script type="text/javascript">
+			function btnxg(){
+				window.location.href = "UserManageInfo_Admin_Edit.html"
+			}
+		</script>
+	</head>
+	<body class="white_bg">
+		<form action="#" method="get">
+			<table width="1107" border="0" align="center" cellpadding="0" cellspacing="0">
+				<tr>
+					<td height="30"></td>
+				</tr>
+			</table>
+			<table width="850" border="0" align="center" cellpadding="0" cellspacing="0">
+				<tr>
+					<td colspan="2" height="20"></td>
+				</tr>
+				<tr>
+					<td width="13" height="30"></td>
+					<td width="822" align="left" valign="top" class="text_blod_title">用户管理</td>
+				</tr>
+				<tr>
+					<td colspan="2" height="15"></td>
+				</tr>
+			</table>
+			<table width="835" border="0" align="center" cellpadding="0" cellspacing="0">
+				<tr>
+					<td width="835">
+						<table width="100%" border="0" cellpadding="0" cellspacing="0">
+							<td width="5" height="25"></td>
+							<td width="4%" align="left" class="text_cray1">姓名</td>
+							<td width="11%"align="left" class="text_cray1">
+								<input type="text" name="realname" style="width: 80px;"/>
+							</td>
+							<td width="6%" align="center" class="text_cray1">性别</td>
+							<td width="6%" align="left" class="text_cray1">
+								<select name="sex" class="text_cray">
+									<option value="1">男</option>
+									<option value="2">女</option>
+								</select>
+							</td>
+							<td width="9%" align="center" class="text_cray1">证件类型</td>
+							<td width="13%" align="left" class="text_cray1">
+								<select name="certType" class="text_cray">
+									<option value="1">二代身份证</option>
+									<option value="2">港澳通行证</option>
+									<option value="3">台湾通行证</option>
+									<option value="4">护照</option>
+								</select>
+							</td>
+							<td width="8%" align="center" class="text_cray1">证件号码</td>
+							<td width="13%" align="left" class="text_cray1">
+								<input type="text" name="cert" class="text_cray" style="width: 80%;"/>
+							</td>
+							<td width="8%" align="center" class="text_cray1">旅客类型</td>
+							<td width="13%" align="left" class="text_cray">
+								<select name="userType" class="text_cray" style="width: 100px;">
+									<option value="1">成人</option>
+									<option value="2">儿童</option>
+									<option value="3">学生</option>
+									<option value="4">残疾军人，伤残人民警察</option>
+								</select>
+							</td>
+							<td width="8%" align="center">
+								<input type="button" class="btncx"/>
+							</td>
+						</table>
+					</td>
+				</tr>
+				<tr>
+					<td colspan="12" height="20"></td>
+				</tr>
+			</table>
+			<table width="553" border="1" align="center" cellpadding="0" cellspacing="0" bordercolor="#dadada" bgcolor="#FFFFFF">
+				<tr>
+					<td width="44" height="25" align="center" valign="middle" class="text_cray1">选择</td>
+					<td width="98" align="center" valign="middle" class="text_cray1">姓名</td>
+					<td width="80" align="center" valign="middle" class="text_cray1">性别</td>
+					<td align="center" valign="middle" class="text_cray1" width="132">证件类型</td>
+					<td align="center" valign="middle" class="text_cray1" width="247">证件号码</td>
+					<td align="center" valign="middle" class="text_cray1" width="82">旅客类型</td>
+					<td align="center" valign="middle" class="text_cray1" width="89">操作</td>
+				</tr>
+				<tr>
+					<td>
+						<input type="checkbox" name="chooseUser" value="1"/>
+					</td>
+					<td>王小明</td>
+					<td>男</td>
+					<td>第二代身份证</td>
+					<td></td>
+					<td>学生</td>
+					<td>
+						<input type="button" class="btnxg" onclick="btnxg()"/>
+					</td>
+				</tr>
+				<tr>
+					<td colspan="7" height="15"><img src="../images/line1.jpg" width="790" height="6"></td>
+				</tr>
+			</table>
+			<br/>
+			<table width="773" border="0" align="center" cellpadding="0" cellspacing="0">
+				<tr>
+					<td width="102" align="left" class="text_cray1">
+						<input type="checkbox" name="allChoose" value="1"/><span class="text_blue">全选</span>
+					</td>
+					<td width="525"></td>
+					<td width="55" >
+						<input type="button" class="btnsc"/>
+					</td>
+					<td width="91" align="right">
+						<input type="button" class="btndc"/>
+					</td>
+				</tr>
+			</table>
+			<br/>
+			<table width="773" border="0" align="center" cellpadding="0" cellspacing="0">
+				<tr>
+					<td width="619"></td>
+					<td width="154" align="right" class="text_cray1">
+						每页显示
+						<select name="pagesize">
+							<option value ="5">5</option>
+							<option value ="10">10</option>
+							<option value ="15">15</option>
+						</select>条信息
+					</td>
+				</tr>
+			</table>
+			<br/>
+			<table width="100%" border="0" cellpadding="0" cellspacing="0">
+				<tr>
+					<td height="2" background="../images/bottom_point.gif"></td>
+				</tr>
+				<tr>
+					<td height="25" align="center" background="../images/bottom_ny_bg.gif" class="text_cray">copyright@12360 购票网</td>
+				</tr>
+			</table>
+		</form>
+	</body>
+</html>

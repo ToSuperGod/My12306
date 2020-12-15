@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>新增用户信息</title>
+		<link rel="stylesheet" type="text/css" href="../css/css.css"/>
+		<script src="../js/My97DatePicker/WdatePicker.js" type="text/javascript" charset="utf-8"></script>
+
+	</head>
+	<body class="white_bg">
+		<form action="UserManagerQuery.html" method="get">
+			<table border="1" width="100%" cellpadding="0" cellspacing="0">
+				<tr>
+					<td height="30"></td>
+				</tr>
+			</table>
+			<table width="835" border="1" align="center" cellpadding="0" cellspacing="0">
+				<tr>
+					<td height="20" colspan="2"></td>
+				</tr>
+				<tr>
+					<td width="64" height="30"></td>
+					<td width="771" valign="top" class="text_blod_title">新增用户信息</td>
+				</tr>
+				<tr>
+					<td height="15" colspan="2"><img src="../images/line1.jpg" width="835" height="6"></td>
+				</tr>
+				<tr>
+					<td colspan="2">
+						<table border="1" cellspacing="0" cellpadding="0">
+							<tr>
+								<td width="64"></td>
+								<td width="771" height="25" align="left" class="text_cray">注：标有<span class="text_red">*</span>处，均为必填项</td>
+							</tr>
+							<tr>
+								<td height="15"></td>
+							</tr>
+						</table>
+						<table width="700" border="1" align="center" cellpadding="0" cellspacing="0">
+							<tr>
+								<td height="15" colspan="3" align="left" class="text_title">登录信息</td>
+							</tr>
+							<tr>
+								<td height="10" colspan="3"></td>
+							</tr>
+							<tr>
+								<td width="20" align="center" class="text_red" height="40">*</td>
+								<td width="100" align="left" class="text_cray1">登录名：</td>
+								<td class="text_cray">
+									<input type="text" name="username"/>由字母、数字或“_”组成，长度不少于6位，不多于30位
+								</td>
+							</tr>
+							<tr>
+								<td height="10" colspan="3"></td>
+							</tr>
+							<tr>
+								<td height="15" colspan="3" align="left" class="text_title">权限设置</td>
+							</tr>
+							<tr>
+								<td colspan="3" height="10"></td>
+							</tr>
+							<tr>
+								<td width="20" align="center" class="text_red" height="40">*</td>
+								<td width="100" align="left" class="text_cray1">用户权限：</td>
+								<td>
+									<select name="rule" class="text_cray">
+										<option value="1">管理员</option>
+										<option value="2">普通用户</option>
+									</select>
+								</td>
+							</tr>
+							<tr>
+								<td colspan="3" height="10"></td>
+							</tr>
+							<tr>
+								<td height="15" colspan="3" align="left" class="text_title">详细信息</td>
+							</tr>
+							<tr>
+								<td colspan="3" height="10"></td>
+							</tr>
+							<tr>
+								<td colspan="3">
+									<table width="100%" border="1" cellpadding="0" cellspacing="0">
+										<tr>
+											<td width="20" height="40" class="text_red" align="center">*</td>
+											<td width="100" align="left" class="text_cray1">真实姓名：</td>
+											<td width="14"></td>
+											<td colspan="3" align="left">
+												<input type="text" name="realname"/>
+											</td>
+										</tr>
+										<tr>
+											<td width="20" height="40" class="text_red" align="center">*</td>
+											<td width="100" align="left" class="text_cray1">性别：</td>
+											<td width="14"></td>
+											<td colspan="3" align="left">
+												<input type="radio" name="sex" value="1"/>男
+												<input type="radio" name="sex" value="2"/>女
+											</td>
+										</tr>
+										<tr>
+											<td width="20" height="40" class="text_red" align="center">*</td>
+											<td width="100" align="left" class="text_cray1">性别：</td>
+											<td width="14"></td>
+											<td align="left" class="text_cray">
+												<select name="province" id="province">
+													<option value ="省份">省份</option>
+												</select>
+											</td>
+											<td width="48" align="left" class="text_cray">城市：</td>
+											<td width="343" align="left" class="text_cray">
+												<select name="city" id="city">
+													<option value="城市">市县</option>
+												</select>
+											</td>
+										</tr>
+										<tr>
+											<td width="20" height="40" class="text_red" align="center">*</td>
+											<td width="100" align="left" class="text_cray1">证件类型：</td>
+											<td width="14"></td>
+											<td colspan="3" align="left">
+												<select name="certType">
+													<option value="1">二代身份证</option>
+													<option value="2">港澳通行证</option>
+													<option value="3">台湾通行证</option>
+													<option value="4">护照</option>
+												</select>
+											</td>
+										</tr>
+										<tr>
+											<td width="20" height="40" class="text_red" align="center">*</td>
+											<td width="100" align="left" class="text_cray1">证件类型：</td>
+											<td width="14"></td>
+											<td colspan="3" align="left">
+												<input name="cert" type="text"/>
+											</td>
+										</tr>
+										<tr>
+											<td width="20" height="40" class="text_red" align="center">*</td>
+											<td width="100" align="left" class="text_cray1">出生日期：</td>
+											<td width="14"></td>
+											<td colspan="3" align="left">
+												<input type="text" name="birthday" readonly="readonly" value="1999-01-01 00:00:00"onfocus="WdatePicker({dateFmt:'yyyy-MM-dd HH:mm:ss'})"/>
+											</td>
+										</tr>
+										<tr>
+											<td height="40" width="20"></td>
+											<td width="100" align="left" class="text_cray1">旅客类型：</td>
+											<td width="14"></td>
+											<td colspan="3" align="left">
+												<select name="userType">
+													<option value="1">成人</option>
+													<option value="2">儿童</option>
+													<option value="3">学生</option>
+													<option value="4">残疾军人，伤残人民警察</option>
+												</select>
+											</td>
+										</tr>
+										<tr>
+											<td height="40" width="20"></td>
+											<td width="100" align="left" class="text_cray1">备注：</td>
+											<td width="14"></td>
+											<td colspan="3" align="left">
+												<textarea rows="8" name="content" style="width: 100%;">
+													
+												</textarea>
+											</td>
+										</tr>
+										<tr>
+											<td colspan="6" height="10"></td>
+										</tr>
+									</table>
+									<br />
+									<table width="700" border="0" align="center" cellpadding="0" cellspacing="0">
+										<td width="164" height="30"></td>
+										<td width="99" align="center">
+											<input type="submit" class="btntj" value=""/>
+										</td>
+										<td width="97"></td>
+										<td width="98" align="center">
+											<input type="reset" class="btncz" value=""/>
+										</td>
+										<td width="92"></td>
+									</table>
+									<br>
+								</td>
+							</tr>
+						</table>
+					</td>
+				</tr>
+			</table>
+			<table width="100%" border="0" cellpadding="0" cellspacing="0">
+				<tr>
+					<td height="2" background="../images/bottom_point.gif"></td>
+				</tr>
+				<tr>
+					<td height="25" align="center" background="../images/bottom_ny_bg.gif" class="text_cray">copyright@12360 购票网</td>
+				</tr>
+			</table>
+		</form>
+		<script src="../js/common.js" type="text/javascript" charset="utf-8"></script>
+	</body>
+</html>
