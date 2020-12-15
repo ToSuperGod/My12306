@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<!-- 头部标签，给浏览器和搜索引擎看的 -->
+		<meta charset="utf-8">
+		<!-- 编码集
+			1.utf-8 万国码  包含了全世界所有国家的信息
+			2.GB2312 简体中文
+			3.GBK: 简体和繁体
+			4.ISO-8859-1 英文
+			原则：尽可能用到能覆盖整个网页所有文字类型的最小编码集
+		 -->
+		<!-- 网站的关键字 -->
+		<meta name="keywords" content="抖音，短视频，直播">
+		<!-- 网站的简介信息描述 -->
+		<meta name="description" content="这是我的私人订票系统">
+		<title>12306购票</title>
+	</head>
+	<body>
+		<h2>欢迎来到12306购票</h2>
+		<a href="https://www.baidu.com">百度</a>
+		<table border="1px" cellspacing="0">
+			<!-- 创建多个相同的标签：用标签名*n tab-->
+			<tr>
+				<!-- colspan：横向合并（实际设置为多个单元格宽度） 其他的单元格要删除 -->
+				<!-- aligen:居中 -->
+				<td colspan="2" align="center">1</td>
+				<td>3</td>
+			</tr>
+			<tr>
+				<td>4</td>
+				<td>5</td>
+				<!-- rowspan:纵向合并 -->
+				<td rowspan="2">6</td>
+			</tr>
+			<tr>
+				<td>7</td>
+				<td>8</td>
+			</tr>
+		</table>
+		<!-- action:提交到哪里 -->
+		<form action="demo1.html" method="get">
+			<!-- value:设置表单中得默认值 -->
+			<!-- <input type="text" name="username" value="Igotit"/> -->
+			<!-- maxlength:设置最大字符长度 -->
+			<input type="text" name="username" value="Igotit" placeholder="请输入昵称" maxlength="6"/>
+			<input type="password" name="password" placeholder="请输入密码"/>
+			<!-- readio:单选钮 name:相同 还要value确定唯一-->
+			<!-- checked="checked":默认选择 -->
+			<input type="radio" name="sex" value="man" checked="checked"/>男
+			<input type="radio" name="sex" value="woman"/>女
+			<input type="radio" name="sex" value="mid"/>中
+			<input type="checkbox" name="interset" value="Python" checked="checked"/>Python
+			<input type="checkbox" name="interset" value="C++"/>C++
+			<input type="checkbox" name="interset" value="Java"/>Java
+			<!-- multiple:全部显示 -->
+			<select name="province" multiple="multiple">
+				<option value="1">辽宁省</option>
+				<option value="2" selected="selected">吉林省</option>
+				<option value="3">黑龙江省</option>
+			</select>
+			<!-- textarea:文本域 -->
+			<textarea name="note">123</textarea>
+			<!-- 日期 -->
+			<input type="date" />
+			<input type="submit" />
+			<!-- 加载视频  autoplay:自动播放  controls:添加控制条  loop:循环播放 muted:静音播放 -->
+			<video src="../images/move.qlv" autoplay="autoplay" controls="controls" loop="loop" muted="muted"></video>
+		</form>
+	</body>
+</html>
+<!-- 
+	1.用户通过什么方式可以找到网站
+		1.直接输入网址
+		2.关键字
+		3.网站的名字
+		4.网站的简介
+ -->
