@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>12306个人注册信息</title>
+		<link href="css/Login_css.css" rel="stylesheet" type="text/css"/>
+		<script src="js/My97DatePicker/WdatePicker.js"></script>
+	</head>
+	<body>
+		<form method="get" action="Login.html">
+			<table width="100%" border="0" cellpadding="0" cellspacing="0">
+				<tr>
+					<td colspan="2" background="images/ny_top_img_bg.gif"><img src="images/ny_top_img.gif" width="650" height="108"></td>
+				</tr>
+				<tr>
+					<td width="75" height="23" bgcolor="#deedf8"></td>
+					<td width="958" align="left" bgcolor="#deedf8">当前位置：注册信息</td>
+				</tr>
+			</table>
+			<table border="0" width="100%" cellpadding="0" cellspacing="0" align="center">
+				<tr>
+					<td background="./images/bg_point_write.gif">
+						<table width="835" border="0" cellpadding="0" cellspacing="0" align="center">
+							<tr>
+								<td colspan="2" height="30"></td>
+							</tr>
+							<tr>
+								<td width="41" height="7"></td>
+								<td width="794" height="30" align="left" valign="top"><span class="text_bold_title">注册信息</span></td>
+							</tr>
+							<tr>
+								<td colspan="2" height="15"><img src="images/line1.jpg" width="835" height="6"></td>
+							</tr>
+							<tr>
+								<td width="5%" height="15"></td>
+								<td width="95%" align="left"><span class="text_cray">
+									注：标有<span class="text_red">*</span>处均为必填项</span></td>
+							</tr>
+							<tr>
+								<td colspan="2" height="15"></td>
+							</tr>
+						</table>
+						<table border="0" cellspacing="0" cellpadding="0" width="700" align="center">
+							<tr>
+								<td colspan="4" width="30" align="left"><span class="text_title">登录信息</span></td>
+							</tr>
+							<tr>
+								<td width="19" align="center" class="text_red">*</td>
+								<td width="98" height="40" align="left" class="text_cray1">登录名：</td>
+								<td width="160" align="left">
+									<input type="text" name="username"/>
+								</td>
+								<td width="423" height="35" align="left" class="text_cray">由字母、数字或“_”组成，长度不少于6位，不多于30位</td>
+							</tr>
+							<tr>
+								<td width="19" align="center" class="text_red">*</td>
+								<td width="98" height="40" align="left" class="text_cray1">密码：</td>
+								<td width="160" align="left">
+									<input type="password" name="pwd"/>
+								</td>
+								<td width="423" height="35" align="left" class="text_cray">不少于6位字符</td>
+							</tr>
+							<tr>
+								<td width="19" align="center" class="text_red">*</td>
+								<td width="98" height="40" align="left" class="text_cray1">确认密码：</td>
+								<td width="160" align="left">
+									<input type="password" name="pwdcheck"/>
+								</td>
+								<td width="423" height="35" align="left" class="text_cray">请再次输入密码</td>
+							</tr>
+							<tr>
+								<td colspan="4" width="30" align="left"><span class="text_title">详细信息</span></td>
+							</tr>
+							<tr>
+								<td width="19" align="center" class="text_red">*</td>
+								<td width="98" height="40" align="left" class="text_cray1">真实姓名：</td>
+								<td width="160" align="left" colspan="2">
+									<input type="text" name="realname"/>
+								</td>
+							</tr>
+							<tr>
+								<td width="19" align="center" class="text_red">*</td>
+								<td width="98" height="40" align="left" class="text_cray1">性别：</td>
+								<td colspan="2" class="text_cray" align="left">
+									<input type="radio" name="sex" value="1"/>男
+									<input type="radio" name="sex" value="2"/>女
+								</td>
+							</tr>
+							<tr>
+								<td width="19" align="center" class="text_red">*</td>
+								<td width="98" height="40" align="left" class="text_cray1">省份：</td>
+								<td width="140" height="35" align="left">
+									<select name="province" class="text_cray" id="province">
+										<option value="省份" selected="selected">省份</option>
+									</select>
+								</td>
+								<td>
+									<table border="0" cellspacing="0" cellpadding="0">
+										<tr>
+											<td width="43" height="35" align="left" class="text_cray">城市：</td>
+											<td width="436" height="35" align="left" class="text_cray">
+												<select name="city" class="text_cray" id="city">
+													<option value="城市" selected="selected">市县</option>
+												</select>
+											</td>
+										</tr>
+									</table>
+								</td>
+							</tr>
+							<tr>
+								<td width="19" align="center" class="text_red">*</td>
+								<td width="98" height="40" align="left" class="text_cray1">证件类型：</td>
+								<td colspan="2" class="text_cray" align="left">
+									<select name="cartType" class="text_cray">
+										<option value ="1">大陆二代身份证</option>
+										<option value ="2">护照</option>
+										<option value ="3">警官证</option>
+										<option value ="4">台湾通行证</option>
+										<option value ="5">港澳通行证</option>
+									</select>
+								</td>
+							</tr>
+							<tr>
+								<td width="19" align="center" class="text_red">*</td>
+								<td width="98" height="40" align="left" class="text_cray1">证件号码：</td>
+								<td colspan="2" class="text_cray" align="left">
+									<input type="text" name="IDnumber" id="" value="" />
+								</td>
+							</tr>
+							<tr>
+								<td width="19" align="center" class="text_red">*</td>
+								<td width="98" height="40" align="left" class="text_cray1">出生日期：</td>
+								<td colspan="2" class="text_cray" align="left">
+									<input type="text" name="birthday" class="text_cray"
+									class="Wdate" onfocus="WdatePicker({dataFmt:'yyyy-MM-dd HH:mm:ss'})"/>
+								</td>
+							</tr>
+							<tr>
+								<td width="19" align="center" class="text_red"></td>
+								<td width="98" height="40" align="left" class="text_cray1">旅客类型：</td>
+								<td colspan="2" class="text_cray" align="left">
+									<select name="userType" style="width: 162px;" class="text_cray" >
+										<option value="1">成人</option>
+										<option value="2">学生</option>
+										<option value="3">儿童</option>
+										<option value="4">残疾军人，撒谎脑残人民警察</option>
+									</select>
+								</td>
+							</tr>
+							<tr>
+								<td colspan="4" height="10"></td>
+							</tr>
+							<tr>
+								<td width="19" align="center" class="text_red"></td>
+								<td width="98" height="40" align="left" class="text_cray1">备注：</td>
+								<td colspan="2" class="text_cray" align="left" height="80">
+									<textarea name="content" rows="8" style="width: 100%; height: 100%; resize: none;">
+									</textarea>
+								</td>
+							</tr>
+							<tr>
+								<td width="19" align="center" class="text_red"></td>
+								<td width="98" height="40" align="left" class="text_cray1"></td>
+								<td colspan="2" class="text_cray" align="left">
+									<input type="checkbox" name="check"/>我已阅读并同意遵守
+									<a target="_blank" href="https://kyfw.12306.cn/otn/regist/rule;jsessionid=D3C79636D2179E3BA0185F2558D8C88D">《中国铁路客户服务中心网站服务条款》</a>
+								</td>
+							</tr>
+							<tr>
+								<td colspan="4" height="20"></td>
+							</tr>
+						</table>
+						<table border="0" cellspacing="0" cellpadding="0" align="center" width="835">
+							<tr>
+								<td width="31" height="20"></td>
+								<td width="31" ></td>
+								<td width="700" align="center">
+									<input type="submit" class="btntj" onclick="tijiao" value="" style="margin-right: 50px;"/>
+									<input type="reset" class="btncz" onclick="chongzhi" value=""/>
+								</td>
+								<td width="31"></td>
+								<td width="31"></td>
+							</tr>
+						</table>
+					</td>
+				</tr>
+			</table><br/>
+			<table border="0" cellspacing="0" cellpadding="0" width="100%">
+				<tr>
+					<td height="25" align="center" background="images/bottom_ny_bg.gif">
+						<span class="text_cray">szlcopy@12306购票网</span>
+					</td>
+				</tr>
+			</table>
+		</form>
+		<script src="js/Register.js" type="text/javascript" charset="utf-8"></script>
+	</body>
+</html>
